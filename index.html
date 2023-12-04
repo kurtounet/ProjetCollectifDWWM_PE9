@@ -13,33 +13,35 @@
     <!-- POPUP -->
     <div id="id_popup" class="popupclass_"><!-- Fenêtre POPUP -->
         <div class="container_popup">
-            <div class="prev-next-profile-btn" onclick="prevProfil()"><!-- BOUTON PREV  -->
-                <div id="prev-profile-btn">
+            <div class="prev-profil-btn" onclick="prevProfil()"><!-- BOUTON PREV  -->
+                <div>
                     < </div>
                 </div><!-- FIN BOUTON PREV  -->
 
-
-            <div class="scrolling-container_profil"> <!-- DEBUT SCROLL -->
                 <div class="container_profil"> <!-- DEBUT CONTAINER  -->
-                    
+
                     <div class="container">
                         <!-- HEADER -->
                         <div class="header-profil-info"><!-- DEBUT de header-profile -->
                             <!-- Image fiche profil -->
 
                             <div class="image-nom-fiche-profil">
-                                <h3 id="nom">BOSSUT </h3>
-                                <h3 id="prenom">Anthony</h3>
+                                <div class="nom_prenom">
+                                    <h3 id="nom">BOSSUT </h3>
+                                    <h3 id="prenom">Anthony</h3>
+                                </div>
                                 <img class="imageProfile" id="imageperso"
                                     src="./assets/personnages/anthonypixelastro.png" alt="image Profile">
 
                             </div>
                             <!-- Info fiche profil -->
                             <div class="infos-fiche-profil">
-                                <p id="accroche" class="profil-accroche">Développeur Web d'élite, passionné par la création d'applications web
+                                <p id="accroche" class="profil-accroche">Développeur Web d'élite, passionné par la
+                                    création d'applications web
                                     innovantes.
                                 </p>
-                                <div id="description" class="profil-description">Développeur web avec une solide expérience dans le développement
+                                <div id="description" class="profil-description">Développeur web avec une solide
+                                    expérience dans le développement
                                     front-end et back-end. Résoudre des problèmes et créer des solutions techniques
                                     élégantes.</p>
                                 </div>
@@ -49,25 +51,25 @@
                                     <div id="id-softskills" class="profil-softskills">
                                     </div>
                                 </div>
-                                
+
                                 <!-- FIN softskills -->
                             </div>
                             <!-- Image signe fiche profil -->
                             <div class="zodiac-fiche-profil">
-                                <img src="./assets/horoscope/sagitaire.png" alt="Signe" width="100%">
-                                
+                                <img src="./assets/horoscope/sagitaire.png" alt="Signe" width="50%">
+
                             </div>
                             <div class="close">
-                                <span  onclick="closePopup()">&times;</span>
+                                <span onclick="closePopup()">&times;</span>
                             </div>
-                            
+
                         </div><!-- FIN de header-profile -->
 
-                       
-                         <!-- DEBUT hardskills -->
+
+                        <!-- DEBUT hardskills -->
                         <div id="body-profil-expertises" class="body-profil-expertises">
                             <h3>ARMES FAVORITES:</h3>
-                            <div id="div-hardskills" class="div-hardskills">                          
+                            <div id="div-hardskills" class="div-hardskills">
 
                             </div>
                         </div>
@@ -80,28 +82,44 @@
                         </div>
                         <!-- PORTFOLIO-->
                         <div class="body-social-cv-portfolio">
-                            <img id="identifiant_linked" class="image_logo" src="./assets/logo/logolinkedin.png"
-                                alt="Linked">
-                            <img id="identifiant_github" class="image_logo" src="./assets/Icon/github.png" alt="Github">
-                            <img id="link_CV" class="image_logo" src="./assets/logo/logocv.png" alt="Github">
-                            <img id="link_downlaod" class="image_logo" src="./assets/Icon/downlaod.png"
-                                alt="Downlaod CV">
-                            <a id="link_portfolio" href="">Portfolio</a>
-                        </div><!-- FIN de body-social-cv-portfolio -->
+                            <div class="link">
+                                <img id="identifiant_linked" class="mage_logo" src="./assets/logo/logolinkedin.png"
+                                    alt="Linked" >
+                            </div>
+                            <div class="link">
+                                <img id="identifiant_github"  src="./assets/Icon/github.png" class="mage_logo" 
+                                    alt="Github">
+                            </div>
 
-                        <!--  FOOTER -->
-                        <!-- FIN de footer-profile -->
+                            <div class="link">
+                                <img id="link_CV"  src="./assets/logo/logocv.png" alt="Github" class="mage_logo" >
+                            </div>
+
+
+                            <div class="link">
+                                <img id="link_downlaod"  src="./assets/Icon/downlaod.png"
+                                    alt="Downlaod CV" class="mage_logo" >
+                            </div>
+                            <div class="link">
+                                <a id="link_portfolio"  class="mage_logo"  href="">Portfolio</a>
+                            </div>
+
+                        </div>
+                    </div><!-- FIN de body-social-cv-portfolio -->
+
+                    <!--  FOOTER -->
+                    <!-- FIN de footer-profile -->
 
 
 
 
-                    </div> <!-- FIN CONTAINER  -->
-                </div>
-            </div><!-- FIN SCROLL  -->
+                </div> <!-- FIN CONTAINER  -->
+            </div>
+
 
             <!-- BOUTON NEXT  -->
-            <div class="prev-next-profile-btn" onclick="nextProfil()">
-                <div id="next-profile-btn"> > </div>
+            <div class="next-profil-btn" onclick="nextProfil()">
+                <div> > </div>
             </div><!-- FIN BOUTON NEXT  -->
 
         </div><!-- FIN container_popup  -->
@@ -111,8 +129,8 @@
 
     <!-- TABLES DES PROFILES -->
     <div class="divpage">
-        <div id="table_des_profiles" class="table_des_profiles">
-            <div class="profile" id="id_0" onclick="affichePopup('0')">
+        <div id="table_des_profils" class="table_des_profils">
+            <div class="vignette-profil" id="id_0" onclick="affichePopup('0')">
                 <img id='image_0' class="image" src="./assets/personnages/idrisspixelastro.png" alt="Nom prenom">
                 <div class="nom_prenom">
                     <p id="nom_0">Nom</p>
@@ -120,7 +138,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_1" onclick="affichePopup('1')">
+            <div class="vignette-profil" id="id_1" onclick="affichePopup('1')">
                 <img id='image_1' class="image" src="./assets/personnages/basilepixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_1">Nom</p>
@@ -128,7 +146,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_2" onclick="affichePopup('2')">
+            <div class="vignette-profil" id="id_2" onclick="affichePopup('2')">
                 <img id='image_2' class="image" src="./assets/personnages/zohrapixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_2">Nom</p>
@@ -136,7 +154,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_3" onclick="affichePopup('3')">
+            <div class="vignette-profil" id="id_3" onclick="affichePopup('3')">
                 <img id='image_3' class="image" src="./assets/personnages/anthonypixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_3">Nom</p>
@@ -144,7 +162,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_4" onclick="affichePopup('4')">
+            <div class="vignette-profil" id="id_4" onclick="affichePopup('4')">
                 <img id='image_4' class="image" src="./assets/personnages/florianpixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_4">Nom</p>
@@ -152,7 +170,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_5" onclick="affichePopup('5')">
+            <div class="vignette-profil" id="id_5" onclick="affichePopup('5')">
                 <img id='image_5' class="image" src="./assets/personnages/danielpixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_5">Nom</p>
@@ -160,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_6" onclick="affichePopup('6')">
+            <div class="vignette-profil" id="id_6" onclick="affichePopup('6')">
                 <img id='image_6' class="image" src="./assets/personnages/lanapixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_6">Nom</p>
@@ -168,7 +186,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_7" onclick="affichePopup('7')">
+            <div class="vignette-profil" id="id_7" onclick="affichePopup('7')">
                 <img id='image_7' class="image" src="./assets/personnages/timotheepixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_7">Nom</p>
@@ -176,7 +194,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_8" onclick="affichePopup('8')">
+            <div class="vignette-profil" id="id_8" onclick="affichePopup('8')">
                 <img id='image_8' class="image" src="./assets/personnages/josephpixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_8">Nom</p>
@@ -184,7 +202,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_9" onclick="affichePopup('9')">
+            <div class="vignette-profil" id="id_9" onclick="affichePopup('9')">
                 <img id='image_9' class="image" src="./assets/personnages/emmapixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_9">Nom</p>
@@ -192,7 +210,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_10" onclick="affichePopup('10')">
+            <div class="vignette-profil" id="id_10" onclick="affichePopup('10')">
                 <img id='image_10' class="image" src="./assets/personnages/nathaliapixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_10">Nom</p>
@@ -200,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_11" onclick="affichePopup('11')">
+            <div class="vignette-profil" id="id_11" onclick="affichePopup('11')">
                 <img id='image_11' class="image" src="./assets/personnages/maximepixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_11">Nom</p>
@@ -208,7 +226,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_12" onclick="affichePopup('12')">
+            <div class="vignette-profil" id="id_12" onclick="affichePopup('12')">
                 <img id='image_12' class="image" src="./assets/personnages/isaacpixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_12">Nom</p>
@@ -216,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_13" onclick="affichePopup('13')">
+            <div class="vignette-profil" id="id_13" onclick="affichePopup('13')">
                 <img id='image_13' class="image" src="./assets/personnages/robinpixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_13">Nom</p>
@@ -224,7 +242,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_14" onclick="affichePopup('14')">
+            <div class="vignette-profil" id="id_14" onclick="affichePopup('14')">
                 <img id='image_14' class="image" src="./assets/personnages/hugopixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_14">Nom</p>
@@ -232,7 +250,7 @@
                 </div>
             </div>
 
-            <div class="profile" id="id_15" onclick="affichePopup('15')">
+            <div class="vignette-profil" id="id_15" onclick="affichePopup('15')">
                 <img id='image_15' class="image" src="./assets/personnages/elmostafapixelastro.png" alt="Nom+prenom">
                 <div class="nom_prenom">
                     <p id="nom_15">Nom</p>

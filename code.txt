@@ -1,0 +1,79 @@
+<div class="scrolling-container_profil"> <!-- DEBUT SCROLL -->
+                <div class="container_profil"> <!-- DEBUT CONTAINER  -->
+                    
+                    <div class="container">
+                        <!-- HEADER -->
+                        <div class="header-profil-info"><!-- DEBUT de header-profile -->
+                            <!-- Image fiche profil -->
+
+                            <div class="image-nom-fiche-profil">
+                                <h3 id="nom">BOSSUT </h3>
+                                <h3 id="prenom">Anthony</h3>
+                                <img class="imageProfile" id="imageperso"
+                                    src="./assets/personnages/anthonypixelastro.png" alt="image Profile">
+
+                            </div>
+                            <!-- Info fiche profil -->
+                            <div class="infos-fiche-profil">
+                                <p id="accroche" class="profil-accroche">Développeur Web d'élite, passionné par la création d'applications web
+                                    innovantes.
+                                </p>
+                                <div id="description" class="profil-description">Développeur web avec une solide expérience dans le développement
+                                    front-end et back-end. Résoudre des problèmes et créer des solutions techniques
+                                    élégantes.</p>
+                                </div>
+                                <!-- DEBUT softskills -->
+                                <div class="div-softskills">
+                                    <h3>Domaines d'excellence:</h3>
+                                    <div id="id-softskills" class="profil-softskills">
+                                    </div>
+                                </div>
+                                
+                                <!-- FIN softskills -->
+                            </div>
+                            <!-- Image signe fiche profil -->
+                            <div class="zodiac-fiche-profil">
+                                <img src="./assets/horoscope/sagitaire.png" alt="Signe" width="100%">
+                                
+                            </div>
+                            <div class="close">
+                                <span  onclick="closePopup()">&times;</span>
+                            </div>
+                            
+                        </div><!-- FIN de header-profile -->
+
+                       
+                         <!-- DEBUT hardskills -->
+                        <div id="body-profil-expertises" class="body-profil-expertises">
+                            <h3>ARMES FAVORITES:</h3>
+                            <div id="div-hardskills" class="div-hardskills">                          
+
+                            </div>
+                        </div>
+                        <!-- FIN hardskills -->
+                        <!-- DEBUT Hobbies -->
+                        <div class="profil-hobbies">
+                            <h3>HOBBIES/ACTIVITES:</h3>
+                            <div id="div-hobbies" class="div-hobbies">
+                            </div>
+                        </div>
+                        <!-- PORTFOLIO-->
+                        <div class="body-social-cv-portfolio">
+                            <img id="identifiant_linked" class="image_logo" src="./assets/logo/logolinkedin.png"
+                                alt="Linked">
+                            <img id="identifiant_github" class="image_logo" src="./assets/Icon/github.png" alt="Github">
+                            <img id="link_CV" class="image_logo" src="./assets/logo/logocv.png" alt="Github">
+                            <img id="link_downlaod" class="image_logo" src="./assets/Icon/downlaod.png"
+                                alt="Downlaod CV">
+                            <a id="link_portfolio" href="">Portfolio</a>
+                        </div><!-- FIN de body-social-cv-portfolio -->
+
+                        <!--  FOOTER -->
+                        <!-- FIN de footer-profile -->
+
+
+
+
+                    </div> <!-- FIN CONTAINER  -->
+                </div>
+            </div><!-- FIN SCROLL  -->
