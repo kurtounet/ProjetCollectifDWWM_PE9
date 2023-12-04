@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- POPUP -->
+    <div id="id_popup" class="popupclass_">
+        <div class="container_popup">
+            <!-- BOUTON PREV  -->
+            <div class="prev-next-profile-btn">
+                <button id="prev-profile-btn">
+                    < </button>
+            </div>
+            <!-- FIN BOUTON PREV  -->
+            <!-- DEBUT CONTAINER  -->
+            <div class="scrolling-popup"> <!-- DEBUT SCROLL -->
+                <div class="container_profil">
+                    <span class="close" onclick="closePopup()">&times;</span>
+                    <div class="container"></div>
+                        <div class="header-profile">
+                            <!-- Image fiche profil -->
+                            <div>
+                                <h2 id="nom_prenom">BOSSUT Anthony</h2>
+                                <img class="imageProfile" id="imageperso" src="./assets/personnages/anthonypixelastro.png"
+                                    alt="image Profile">
+
+                            </div>
+                            <!-- Info fiche profil -->
+                            <div>
+
+                                <div id="accroche">Développeur Web d'élite, passionné par la création d'applications web
+                                    innovantes.</div>
+                                <div id="description">Développeur web avec une solide expérience dans le développement
+                                    front-end et back-end. Résoudre des problèmes et créer des solutions techniques
+                                    élégantes.</div>
+                                <h2>Domaines d'excellence:</h2>
+                                <div id="softSkills">Communication claire , Travail d'équipe,
+                                    Adaptabilité, Résolution de problèmes, Esprit critique, Gestion du temps,
+                                    Empathie, Apprentissage continu, Attention aux détails, Autonomie</div>
+
+
+                                <p>Ceci est un texte qui défile. </p>
+
+                            </div>
+                            <!-- Image signe fiche profil -->
+                            <div class="horoscope">
+                                <img src="./assets/horoscope/sagitaire.png" alt="Signe" width="50%">
+                            </div>
+                        </div>
+                
+                    <!--  -->
+                    <h1>ARMES FAVORITES:</h1>
+                    <div class="body-expertises">
+                        <div class="expertise">
+                            <h2>Angular</h2>
+                            <img src="./assets/logo/logoangular.png" alt="Angular" class="image_logo_expertise">
+                        </div>
+                        <div class="expertise">
+                            <h2>Javascript</h2>
+                            <img src="./assets/logo/logojs.png" alt="Javascript" class="image_logo_expertise">
+                        </div>
+                        <div class="expertise">
+                            <h2>HTML</h2>
+                            <img src="./assets/logo/logohtml.png" alt="HTML" class="image_logo_expertise">
+                        </div>
+                        <div class="expertise">
+                            <h2>CSS</h2>
+                            <img src="./assets/logo/logocss.png" alt="Css" class="image_logo_expertise">
+                        </div>
+                        <div class="expertise">
+                            <h2>Symfony</h2>
+                            <img src="./assets/logo/logosymfony.png" alt="Symfony" class="image_logo_expertise">
+                        </div>
+                        <div class="expertise">
+                            <h2>PHP</h2>
+                            <img src="./assets/logo/logophp.png" alt="PHP" class="image_logo_expertise">
+
+                        </div>
+                        <div class="expertise">
+                            <h2>Wordpress</h2>
+                            <img src="./assets/logo/logowordpress.png" alt="Wordpress" class="image_logo_expertise">
+
+                        </div>
+                        <div class="expertise">
+                            <h2>SQL</h2>
+                            <img src="./assets/logo/logosql.png" alt="SQL" class="image_logo_expertise">
+
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                    <!--  -->
+                    <div class="body-social-cv-portfolio">
+                        <img id="identifiant_linked" class="image_logo" src="./assets/logo/logolinkedin.png" alt="Linked">
+                        <img id="identifiant_github" class="image_logo" src="./assets/Icon/github.png" alt="Github">
+                        <img id="identifiant_github" class="image_logo" src="./assets/logo/logocv.png" alt="Github">
+                        <img id="link_downlaod" class="image_logo" src="./assets/Icon/downlaod.png" alt="Downlaod CV">
+                        <a id="link_portfolio" href="">Portfolio</a>
+                    </div>
+                    <!--  -->
+                    <div class="footer-profile">
+                        <div class="div-hobbies">
+                            <h1>HOBBIES/ACTIVITES:</h1>
+                            <div class="hobbies">Musique</div>
+                            <div class="hobbies">Jeux Vidéo</div>
+                            <div class="hobbies">Sexe</div>
+                            <div class="hobbies">Drogue</div>
+                            <div class="hobbies">Rock n'roll</div>
+                            <div class="hobbies">Dévellopement web</div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+            </div><!-- FIN SCROLL  -->
+            <!-- FIN CONTAINER  -->
+            <!-- BOUTON NEXT  -->
+            <div class="prev-next-profile-btn">
+                <button id="next-profile-btn"> > </button>
+            </div>
+            <!-- FIN BOUTON NEXT  -->
+        </div>
+    </div>
+    <!-- FIN POPUP -->
+
+    <!-- TABLES DES PROFILES -->
+    <div class="divpage">
+        <div id="table_des_profiles" class="table_des_profiles">
+            <div class="profile" id="id_0" onclick="affichePopup('0')">
+                <img id='image_0' class="image" src="./assets/personnages/idrisspixelastro.png" alt="Nom prenom">
+                <div class="nom_prenom">
+                    <p id="nom_0">Nom</p>
+                    <p id="prenom_0">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_1" onclick="affichePopup('1')">
+                <img id='image_1' class="image" src="./assets/personnages/basilepixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_1">Nom</p>
+                    <p id="prenom_1">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_2" onclick="affichePopup('2')">
+                <img id='image_2' class="image" src="./assets/personnages/zohrapixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_2">Nom</p>
+                    <p id="prenom_2">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_3" onclick="affichePopup('3')">
+                <img id='image_3' class="image" src="./assets/personnages/anthonypixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_3">Nom</p>
+                    <p id="prenom_3">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_4" onclick="affichePopup('4')">
+                <img id='image_4' class="image" src="./assets/personnages/florianpixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_4">Nom</p>
+                    <p id="prenom_4">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_5" onclick="affichePopup('5')">
+                <img id='image_5' class="image" src="./assets/personnages/danielpixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_5">Nom</p>
+                    <p id="prenom_5">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_6" onclick="affichePopup('6')">
+                <img id='image_6' class="image" src="./assets/personnages/lanapixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_6">Nom</p>
+                    <p id="prenom_6">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_7" onclick="affichePopup('7')">
+                <img id='image_7' class="image" src="./assets/personnages/timotheepixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_7">Nom</p>
+                    <p id="prenom_7">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_8" onclick="affichePopup('8')">
+                <img id='image_8' class="image" src="./assets/personnages/josephpixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_8">Nom</p>
+                    <p id="prenom_8">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_9" onclick="affichePopup('9')">
+                <img id='image_9' class="image" src="./assets/personnages/emmapixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_9">Nom</p>
+                    <p id="prenom_9">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_10" onclick="affichePopup('10')">
+                <img id='image_10' class="image" src="./assets/personnages/nathaliapixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_10">Nom</p>
+                    <p id="prenom_10">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_11" onclick="affichePopup('11')">
+                <img id='image_11' class="image" src="./assets/personnages/maximepixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_11">Nom</p>
+                    <p id="prenom_11">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_12" onclick="affichePopup('12')">
+                <img id='image_12' class="image" src="./assets/personnages/isaacpixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_12">Nom</p>
+                    <p id="prenom_12">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_13" onclick="affichePopup('13')">
+                <img id='image_13' class="image" src="./assets/personnages/robinpixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_13">Nom</p>
+                    <p id="prenom_13">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_14" onclick="affichePopup('14')">
+                <img id='image_14' class="image" src="./assets/personnages/hugopixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_14">Nom</p>
+                    <p id="prenom_14">Prenom</p>
+                </div>
+            </div>
+
+            <div class="profile" id="id_15" onclick="affichePopup('15')">
+                <img id='image_15' class="image" src="./assets/personnages/mostafapixelastro.png" alt="Nom+prenom">
+                <div class="nom_prenom">
+                    <p id="nom_15">Nom</p>
+                    <p id="prenom_15">Prenom</p>
+                </div>
+            </div>
+
+        </div>
+    </div><!-- FIN table_des_profiles -->
+    </div><!-- FIN divpage -->
+    <script src="script.js"></script>
+</body>
+
+</html>

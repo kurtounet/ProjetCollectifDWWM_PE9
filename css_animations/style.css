@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+body {
+    
+    cursor: url("../assets/images/Curseur_Souris.png"), auto;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.divpage {
+    background-image: url("../assets/images/backgroundStars.png"); 
+    background-color: rgb(13, 4, 94);   
+    height: 100vh;
+    width: 100VW;
+    justify-content: center;
+    
+}
+
+.table_des_profiles {    
+    height: 100vh;
+    /* width: 100VW; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+}
+/*
+.profile:focus {
+    background-color: rgb(255, 0, 191);
+    border: 10px solid greenyellow;
+    color: aliceblue;
+    font-size: xx-large;
+    border-radius: 20px;
+}
+*/
+.profile:hover {
+    /*background-color: #9e5879;
+    border: 10px solid #322599;*/
+    color: aliceblue;
+    font-size: xx-large;
+    /*border-radius: 80px;*/
+    text-align: center;
+}
+
+.profile {
+    /*
+    background-color: #323799;
+    border: 2px solid #9e5879;
+    border-radius: 50px;
+    */   
+    width: 12vw;
+    height: 35vh;    
+    display: flex;
+    flex-direction: column;
+    text-align:  center;
+    align-items: center;
+    color: aliceblue;
+    font-size: medium;
+}
+
+/* POPUP */
+.popupclass_ {
+    /*border: 10px solid brown;*/
+    width: 80%;
+    
+    height: min-content;
+    display: none;
+    position: fixed;
+    margin-top: 5%;
+    margin-left: 10%;
+    
+}
+
+#id_popup .container_popup {
+    width: 100%;
+    height: 100%;    
+    border: 10px solid #572599;
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    
+}
+
+/* scrolling-text */
+.scrolling-container_profil {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;    
+}
+.scrolling-container_profil .container{
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+    animation: scroll 1s linear ;
+}
+
+@keyframes scroll {
+    to {        
+        transform: translateX(-100%);
+    }
+}
+#id_popup .container_profil {    
+    background-image: url("../assets/images/backgroundStars.png");
+    /* box-shadow: 0px -0px 500px 50px rgba(1, 1, 65, 0.9);*/
+    color: aliceblue;
+    background-size: cover;
+    border-radius: 20px;
+    border: 20px solid white;
+     
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+#id_popup .header-profil-info {    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+#id_popup .image-nom-fiche-profil{
+    /*border: 5px solid green ;*/
+    width: 15%; 
+    height: 30%;
+    margin: 5px;
+    padding: 5px;
+}
+#id_popup .imageProfile {
+    width: 10vw;      
+}
+#id_popup #nom_prenom {     
+     
+    font-size: xx-large;
+}
+#id_popup .infos-fiche-profil{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+   /* border: 5px solid green ;*/
+    width: 70%; 
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+#id_popup #accroche {
+    font-size: x-large;    
+}
+#id_popup #description {    
+    font-size: x-large;
+}
+#id_popup #softSkills { 
+    background-color: brown;
+    width: 8%;     
+    text-align: justify;     
+    font-size: x-large;
+}
+.zodiac-fiche-profil {
+    width: 15%;
+    height: 100%;
+        
+}
+#id_popup .body-social-cv-portfolio {
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: space-between;
+    margin: 1.5%;
+    width: 100%;
+}
+
+#id_popup .footer-profil-hobbies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+
+#id_popup .body-profil-expertises{
+    border: 5px solid #322599;   
+    background-color: aliceblue;
+    opacity: 50%;
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-around;
+    /*animation: 0.5s linear 1s forwards slide_in;*/
+    /*animation: 0.5s ease-in-out 1s forwards slide_in;*/
+    /*animation-direction: reverse 0%;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;*/
+}
+@keyframes slide_in {
+    from { transform: scale(0); }
+    to   { transform: scale(0.8);  }
+    
+  }
+@keyframes slidein {
+    from { transform: scale(0.8); }
+    to   { transform: scale(1); }
+    
+  }
+#id_popup .hardskills{    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; 
+   /* animation: .1s linear 0.5s infinite alternate slidein; */ 
+    
+}
+#id_popup .imageHardskills{
+    width: 50%;
+
+}
+/************BOUTONS ****************************/
+#id_popup .close:hover{
+    background-color: brown;
+}
+#id_popup .close {
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    top: 25px;
+    right: 8vw;
+    cursor: pointer;
+}
+#id_popup button {
+    position: relative;
+    border: 2px solid white;
+    background-color: rgb(33, 33, 105);
+    color: white;
+    width:  100%;
+    height: 100%;
+    font-size: 50px;
+    border-radius: 50px;
+}
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+#id_popup .prev-next-profile-btn {  
+    /*background-color: black;*/  
+    width: 100px;
+    height: 50vh;
+
+    /*display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;*/
+
+}
+
+
+/* Class des images*/
+image_logo_expertise{
+    width: 5vw;
+    height: 5vh;
+
+}
+.image_logo {
+    cursor: pointer;
+    border-radius: 15%;
+    width: 5%;
+    height: 5%;
+}
+
+.image {
+    width: 100%;
+    height: 95%;
+}
+
+
+
+
+
+/* HOBBIES*/
+.div-hobbies {
+    background-color: gray;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    border-radius: 0px 0px 15px 15px;
+
+}
+
+.hobbies {
+    color: black;
+    font-weight: bold;
+    font-size: x-large;
+}

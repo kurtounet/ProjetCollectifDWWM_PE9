@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    margin-top: 400px;
+    margin-left: 10%;
+    color: white;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 3px;
+}
+.btn:hover {
+    background-color: white;
+    color: #000000;
+    cursor: pointer;
+}
+.btn:nth-child(1) {
+    cursor: url("cursor.png"), auto;
+}
+.btn:nth-child(2) {
+    cursor: url("cursor2.png"), auto;
+}
+.container {
+    margin-left: 1250px;
+}
+.profil {
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 90%;
+    margin-left: 1000px;
+    color: #ffffff;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    border-radius: 10px;
+    margin-top: -550px;
+    margin-left: 45px;
+}
+.close {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    top: 25px;
+    right: 35px;
+    cursor: pointer;
+}
+
+.profil_picture {
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: 2px solid white;
+    border-radius: 3px;
+}
+.profil_title {
+    font-size: 25px;
+    margin-left: 300px;
+    margin-top: -180px;
+}
+.profil_name {
+    font-size: 20px;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.profil_pseudo {
+    font-size: 15px;
+    margin-left: 300px;
+}
+.profil_pro {
+    font-size: 15px;
+    margin-left: 300px;
+    font-weight: bold;
+}
